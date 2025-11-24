@@ -1,0 +1,20 @@
+#!/usr/bin/env sh
+
+# Exit on error
+set -e
+
+echo "🔍 Running pre-push checks..."
+
+# Full lint check
+echo "📝 Running full lint..."
+npm run lint
+
+# Full type check
+echo "🔧 Running full type check..."
+npm run type-check
+
+# Format check
+echo "💅 Checking formatting..."
+npm run format:check
+
+echo "✅ All pre-push checks passed!"

@@ -1,0 +1,11 @@
+#!/usr/bin/env sh
+
+# Exit on error
+set -e
+
+echo "🔍 Running pre-commit checks..."
+
+# Run lint-staged (handles linting and formatting on staged files)
+npx lint-staged
+
+echo "✅ Pre-commit checks passed!"

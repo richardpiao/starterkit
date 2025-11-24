@@ -1,0 +1,4 @@
+/* Tailwind entry point - import this in your main stylesheet */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
